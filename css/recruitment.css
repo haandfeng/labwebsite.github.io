@@ -64,64 +64,93 @@ a {
 }
 .left{
     width: 10%;
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-start; 
 }
 .blue_block1 {
-    display: block;
-    height: 80px;
-    background:#0043B3;
-    text-align: left;
-    width: 40px;
-    margin-left: 0px;
-    margin-top: 50px;
-    /* padding-right: 200px; */
+    height: 45px;
+    background: #0043B3;
+    width: 50px;
+    margin-top: 70px; /* 顶部距离 */
+    margin-right: 20px;
+}
+.blue_block2 {
+    height: 45px;
+    background: #0043B3;
+    width: 50px;
+    margin-top: 20px; /* 顶部距离 */
+    margin-right: 20px;
 }
 .mid{
     flex-grow: 1;
 }
-.right{
-    width: 10%;
+.right {
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-end; /* 右对齐 */
+    align-items: center; /* 确保垂直居中 */
+    text-align: right;
+    font-size: 15px;
+  }
+  
+  .text-content {
+    margin-right: 20px; /* 给蓝色块留出空间 */
+    color:#666666;
+  }
+.text-content .size1{
+    font-weight: bold;
+}  
+.text-content .size2{
+    border-bottom: 1px solid #CCCCCC; /* 设置下划线 */
+    padding-bottom: 25px; /* 为下划线留出空间 */
+    margin-bottom: 25px;
 }
-.blue_block3 {
-    display: block;
-    height: 40px;
-    background:#0043B3;
-    width: 40px;
-    margin-left: 90%;
-    margin-right: 0px;
-    margin-top: 50px;
-    /* padding-right: 200px; */
-}
+  .blue_block3 {
+    height: 180px;
+    background: #0043B3;
+    width: 70px;
+  }
+/* CSS */
 /* CSS */
 .tabs {
     display: flex;
     border-bottom: 2px solid #333333; 
     width: 50%;
-  }
-  
-  .tab {
-    padding: 10px 20px; /* Padding for spacing */
-    cursor: pointer; /* Pointer cursor to indicate clickable */
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer; 
     font-weight: normal;
-  }
-  
-  .tab.active {
-    font-weight: bold; /* Bold for the active tab */
-    /* border-bottom: 2px solid black;  */
-  }
-  
-  .content {
-    margin-top: 30px; /* Adds space between the tabs and content */
+    color: grey; 
+    font-size: 25px;
+}
+
+.tab.active {
+    font-weight: bold; 
+    color: black; 
+    font-size: 25px;
+}
+
+.content {
+    margin-top: 30px; 
     font-size: 20px;
-    font-weight: 200; /* 字体变细 */
-  }
-  
-  .tab {
-    color: grey; /* Default text color */
-    font-size: 25px;
-  }
-  
-  .tab.active {
-    color: black; /* Active tab text color */
-    font-size: 25px;
-  }
+    font-weight: 200; 
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-weight: bold; /* Section titles with bold font */
+    font-size: 19px;
+}
+
+.artical{
+    font-size: 17px;
+}
+.Work{
+    font-size: 22px;
+    font-weight: lighter !important;
+}
   
