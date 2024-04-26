@@ -9,5 +9,22 @@ a {
     text-decoration: none; /* 移除所有链接的下划线 */
     color: inherit; /* 使用父元素的颜色 */
 }
-
+.mid{
+    flex-grow: 1;
+}
+.right {
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-end; /* 右对齐 */
+    align-items: center; /* 确保垂直居中 */
+    text-align: right;
+    font-size: 15px;
+}
+.container{
+    display: flex;
+}
+.left{
+    width: 10%;
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-start; 
+}
 /* Header styling */
