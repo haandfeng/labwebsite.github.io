@@ -45,7 +45,7 @@ body {
     width: 100%;
     flex-direction: row;
 }
-
+.content{flex-grow: 1;}
 .left-bar {
     background-color: #0043B3; /* Blue color for the bar */
     width: 10px; /* Width of the blue bar */
@@ -62,7 +62,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #f5f5f5;
-    width: 100%; /* Ensures the business card spans the whole width */
+    width: 90%; /* Ensures the business card spans the whole width */
 }
 
 .profile-picture {
@@ -96,4 +96,123 @@ body {
 .title {
     font-size: 1em;
     color: #555;
+}
+
+
+
+
+.container {
+    margin: 0px;
+}
+
+
+
+.about {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1.5px solid #ccc; /* Adds a border around the section */
+    padding: 10px; /* Optional: adds spacing inside the border */
+    background-color: #f7f7f7;
+}
+
+.about .stats {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.number {
+    font-size: 24px; /* Larger font size for the numbers */
+    font-weight: bold; /* Bolder text for the numbers */
+}
+
+.label {
+    font-size: 14px; /* Smaller font size for the text */
+    color: #555; /* Optional: lighter color for text */
+}
+
+
+.content2 {
+    display: flex;
+    justify-content: space-between; /* Evenly space the boxes */
+}
+
+.content2 .box {
+    width: 45%; /* Each box occupies 45% of the width */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border around each box */
+    background-color: #f7f7f7; /* Background color for the boxes */
+}
+
+.section-title {
+    display: flex; 
+    align-items: center; 
+    font-weight: 200 !important;  
+    color: black; 
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dot {
+    content: '';
+    width: 8px; /* Dot size */
+    height: 8px; 
+    background-color: #0043B3; /* Blue color for the dot */
+    border-radius: 50%; /* Make it round */
+    display: inline-block; /* Ensure it displays as an inline element */
+    margin-right: 5px; /* Space between the dot and the text */
+}
+
+.text-content {
+    text-align: left; /* Align text to the left */
+}
+
+.biography {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+.divider span {
+    padding: 0 10px;
+    background-color: white; /* To create a white box around the text */
+    color: #0043B3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1; /* To ensure the lines stretch evenly on both sides */
+    height: 1px;
+    background: #ccc; /* Light gray for the line color */
+}
+
+
+.container2{
+    display: flex;
+}
+.left{
+    width: 10%;
+}
+.mid{
+    flex-grow: 1;
+}
+.right{
+    width: 10%;
 }

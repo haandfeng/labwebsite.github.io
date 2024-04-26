@@ -27,3 +27,101 @@ a {
     font-size: 15px; /* 设置字体大小 */
     gap: 15px; /* 控制元素之间的间距 */
 }
+
+.head1 {
+    padding: 20px;
+    background-color: white;
+    text-align: center; /* 标题居中 */
+    font-weight: bold; /* 确保粗体 */
+}
+
+/* 标题的样式 */
+.head1 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    position: relative; /* 为线条提供定位参考 */
+    text-align: center; /* 标题居中 */
+    margin-top: 50px;
+    margin-bottom:  50px;
+}
+.head1 .title-line {
+    display: block;
+    height: 2px; /* 线条高度 */
+    background: #333; /* 线条颜色 */
+    position: absolute; /* 确保线条定位 */
+    bottom: -5px; /* 与标题之间的距离 */
+    left: 0; /* 从左侧开始 */
+    right: 0; /* 与右侧对齐 */
+    width: auto; /* 宽度自动调整 */
+    transform: translateY(100%); /* 确保线条在标题下方 */
+}
+
+
+.container{
+    display: flex;
+}
+.left{
+    width: 10%;
+}
+.blue_block1 {
+    display: block;
+    height: 80px;
+    background:#0043B3;
+    text-align: left;
+    width: 40px;
+    margin-left: 0px;
+    margin-top: 50px;
+    /* padding-right: 200px; */
+}
+.mid{
+    flex-grow: 1;
+}
+.right{
+    width: 10%;
+}
+.blue_block3 {
+    display: block;
+    height: 40px;
+    background:#0043B3;
+    width: 40px;
+    margin-left: 90%;
+    margin-right: 0px;
+    margin-top: 50px;
+    /* padding-right: 200px; */
+}
+/* CSS */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333333; 
+    width: 50%;
+  }
+  
+  .tab {
+    padding: 10px 20px; /* Padding for spacing */
+    cursor: pointer; /* Pointer cursor to indicate clickable */
+    font-weight: normal;
+  }
+  
+  .tab.active {
+    font-weight: bold; /* Bold for the active tab */
+    /* border-bottom: 2px solid black;  */
+  }
+  
+  .content {
+    margin-top: 30px; /* Adds space between the tabs and content */
+    font-size: 20px;
+    font-weight: 200; /* 字体变细 */
+  }
+  
+  .tab {
+    color: grey; /* Default text color */
+    font-size: 25px;
+  }
+  
+  .tab.active {
+    color: black; /* Active tab text color */
+    font-size: 25px;
+  }
+  
