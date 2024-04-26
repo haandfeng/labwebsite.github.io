@@ -5,6 +5,10 @@ body {
     padding: 0;
     background-color: #fff;
 }
+a {
+    text-decoration: none; /* 移除所有链接的下划线 */
+    color: inherit; /* 使用父元素的颜色 */
+}
 
 /* Header styling */
 header {
@@ -20,16 +24,6 @@ header h1 {
     display: inline-block;
     position: relative;
     /* margin-right: 400px; 调整标题的左侧边距，使其向左移动 */
-}
-
-.title-line {
-    display: block;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    bottom: -5px;  /* 在标题下方 */
-    left: 0;
-    width: 100%;  /* 与标题相同宽度 */
 }
 
 /* Navigation styling */
@@ -52,6 +46,22 @@ nav ul li a {
     color: #333;
     font-size: 14px; /* 设置链接的字体大小 */
 }
+nav ul li a:hover {
+    color: #0043B3; /* 蓝色 */
+    font-weight: bold; /* 链接悬浮时加粗 */
+}
+
+.title-line {
+    display: block;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    bottom: -5px;  /* 在标题下方 */
+    left: 0;
+    width: 100%;  /* 与标题相同宽度 */
+}
+
+
 
 
 
@@ -196,38 +206,4 @@ nav ul li a {
 }
 
 
-/* General footer styling */
-footer {
-    display: flex; /* Enable flex layout */
-    justify-content: flex-end; /* Align container to the right */
-    padding: 20px; /* Padding for spacing */
-    background-color: #0043B3; /* Deep blue background */
-    color: white; /* White text on blue background */
-}
 
-/* Contact content styling within footer */
-.contact-content {
-    padding-bottom: 10px; /* Padding below the main content */
-    margin-bottom: 10px; /* Additional space below content */
-}
-
-.contact-content h2 {
-    font-size: 24px; /* Heading font size */
-    font-weight: bold; /* Bold heading */
-    margin-bottom: 10px; /* Margin below the heading */
-}
-
-.contact-content p {
-    font-size: 16px; /* Font size for paragraph */
-    margin: 5px 0; /* Spacing between lines */
-}
-.contact-container{
-    /* float: right; */
-    text-align: left;
-}
-/* Horizontal line within footer */
-.footer-line {
-    border: none;
-    border-top: 1px solid white; /* Horizontal line with white color */
-    margin: 20px 0; /* Extra margin for spacing */
-}

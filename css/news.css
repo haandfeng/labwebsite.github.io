@@ -1,0 +1,83 @@
+/* Global style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+a {
+    text-decoration: none; /* 移除所有链接的下划线 */
+    color: inherit; /* 使用父元素的颜色 */
+}
+/* Header style */
+.header {
+    background: #0043B3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* 确保居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    padding-left: 60px; /* 增加左侧内边距 */
+}
+
+/* 新增的中间部分样式 */
+.header-middle {
+    display: flex; /* 确保子元素并排 */
+    align-items: center; /* 居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    gap: 15px; /* 控制元素之间的间距 */
+}
+
+/* Image style */
+.image-container {
+    text-align: center;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    padding-bottom: 20px;
+}
+
+/* 蓝条样式 */
+.header-wrapper {
+    display: inline-block; /* 内联块级显示 */
+}
+
+.blue-bar {
+    background-color: #0043B3;
+    height: 12px;
+    width: 100%; /* 蓝条占用整个容器宽度 */
+    display: inline-block;
+}
+
+.content-with-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    /* align-items: stretch;  */
+    justify-content: flex-start; /* 控制元素从左向右排列 */
+}
+
+.main h1 {
+    font-size: 24px;
+}
+
+.main p {
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+.right-bar {
+    background-color: #0043B3;
+    width: 80px; /* 蓝条的宽度 */
+    height: auto; /* 确保蓝条与段落高度一致 */
+    display: inline-block; /* 作为内联块级元素 */
+    margin-left: 10px; 
+}
+

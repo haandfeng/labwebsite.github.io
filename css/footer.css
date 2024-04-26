@@ -1,0 +1,34 @@
+/* General footer styling */
+footer {
+    display: flex; /* Enable flex layout */
+    justify-content: flex-end; /* Align container to the right */
+    padding: 20px; /* Padding for spacing */
+    background-color: #0043B3; /* Deep blue background */
+    color: white; /* White text on blue background */
+    font-size: 10px;
+}
+
+/* Contact content styling within footer */
+.contact-content {
+    padding-bottom: 10px; /* Padding below the main content */
+    margin-bottom: 10px; /* Additional space below content */
+}
+
+.contact-content h2 {
+    font-weight: bold; /* Bold heading */
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+.contact-content p {
+    margin: 5px 0; /* Spacing between lines */
+}
+.contact-container{
+    /* float: right; */
+    text-align: left;
+}
+/* Horizontal line within footer */
+.footer-line {
+    border: none;
+    border-top: 1px solid white; /* Horizontal line with white color */
+    margin: 20px 0; /* Extra margin for spacing */
+}
