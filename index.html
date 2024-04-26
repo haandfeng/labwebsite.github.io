@@ -7,16 +7,23 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
     <script src="./js/script.js"></script>
 </head>
 <body>
-      <!-- Header -->
-      <header>
-
+    <header>
         <nav>
             <ul>
-                <li><a href="#about">About the Group</a></li>
-                <li><a href="#members">Group Members</a></li>
+                <li><a href="./index.html">About the Group</a></li>
+                <li class="group-members">
+                    <a href="#members">Group Members</a>
+                    <!-- 额外信息，确保不同内容在不同行 -->
+                    <ul class="additional-info hidden"> <!-- 初始隐藏 -->
+                        <li><a href="#bio">siu shing man's bio</a></li> <!-- 在一行上显示 -->
+                        <li><a href="#recruitment">Recruitment</a></li> <!-- 在不同行上显示 -->
+                    </ul>
+                </li>
+                <!-- 其他列表项 -->
                 <li><a href="#research">Research Outcomes</a></li>
                 <li><a href="#design">Design Outcomes</a></li>
                 <li><a href="#achievements">Student Achievements</a></li>
@@ -24,13 +31,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <br><br><br>
         <h1 class="Siu">
             Siu Shing Man's Research and Design Group
-            <span class="title-line"></span> <!-- 用于水平线 -->
+            <span class="title-line"></span> <!-- 水平线 -->
         </h1>
     </header>
-
+    
+    
+    
     <br><br><br>
     <!-- Vision and Mission -->
     <div class="container">

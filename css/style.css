@@ -11,55 +11,9 @@ a {
 }
 
 /* Header styling */
-header {
-    padding: 20px;
-    background-color: white;
-    text-align: center; /* 确保标题居中 */
-}
 
-header h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    display: inline-block;
-    position: relative;
-    /* margin-right: 400px; 调整标题的左侧边距，使其向左移动 */
-}
 
-/* Navigation styling */
-nav {
-    text-align: center; /* 将导航居中 */
-}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px; /* 控制列表项之间的间距 */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px; /* 设置链接的字体大小 */
-}
-nav ul li a:hover {
-    color: #0043B3; /* 蓝色 */
-    font-weight: bold; /* 链接悬浮时加粗 */
-}
-
-.title-line {
-    display: block;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    bottom: -5px;  /* 在标题下方 */
-    left: 0;
-    width: 100%;  /* 与标题相同宽度 */
-}
 
 
 
@@ -160,50 +114,55 @@ nav ul li a:hover {
     gap: 10px; /* Spacing between news items */
 }
 
-/* Individual news item styling */
+/* 基本样式 */
 .news-item {
-    background-color: white;
-    border: 1px solid lightgray;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
-    width: calc(33% - 20px); /* Distributes items evenly across the row */
-    display: flex; /* Aligns image and content horizontally */
-    flex-direction: column; /* Stacks image and content vertically */
+    background-color: white; /* 基本背景色 */
+    border: 1px solid lightgray; /* 默认边框颜色 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    width: calc(33% - 20px); /* 均匀分布 */
+    display: flex; /* 图片和内容水平对齐 */
+    flex-direction: column; /* 垂直堆叠 */
+    transition: border-color 0.3s; /* 为边框颜色改变添加过渡效果 */
 }
 
-/* Image styling */
+/* 悬浮时的边框变色 */
+.news-item:hover {
+    border-color: #0043B3; /* 悬浮时边框变蓝 */
+}
+
+/* 图片样式 */
 .news-image {
     text-align: center;
     padding: 10px;
 }
 
 .news-image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* 确保图片宽度自适应 */
+    height: auto; /* 保持原始比例 */
 }
 
-/* Content styling */
+/* 内容样式 */
 .news-content {
     padding: 10px;
 }
 
 .news-content h3 {
     font-size: 18px;
-    color: #333333;
+    color: #333; /* 字体颜色 */
 }
 
 .news-content p {
     font-size: 16px;
-    color: #555555;
-    line-height: 1.5;
+    color: #555; /* 字体颜色 */
+    line-height: 1.5; /* 行间距 */
 }
+
+/* 蓝色块样式 */
 .blue_block2 {
     display: block;
     height: 15px;
     width: 2.5px;
-    background:#0043B3;
+    background: #0043B3;
     text-align: left;
     width: 140px;
 }
-
-
-

@@ -1,0 +1,89 @@
+/* Header 样式 */
+header {
+    padding: 20px;
+    background-color: white;
+    text-align: center; /* 标题居中 */
+    font-weight: bold; /* 确保粗体 */
+}
+
+/* 导航设置 */
+nav {
+    text-align: center; /* 导航居中 */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* 移除列表符号 */
+    padding: 0;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* 为绝对定位提供参考 */
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* 悬浮时显示额外信息 */
+/* 确保额外信息不换行 */
+.additional-info {
+    white-space: nowrap; /* 文本不换行 */
+    text-align: left; /* 文本左对齐 */
+    padding: 10px; /* 控制内边距 */
+    border: 1px solid lightgray; /* 适度边框 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 控制额外信息的显示与隐藏 */
+.group-members:hover .additional-info {
+    display: block; /* 悬浮时显示额外信息 */
+    position: absolute; /* 绝对定位 */
+    top: 100%; /* 在 "Group Members" 正下方 */
+    left: 0; /* 从左侧开始 */
+    background: white; /* 背景色 */
+}
+
+/* 链接样式 */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 悬浮时样式 */
+nav ul li a:hover {
+    color: #0043B3; /* 悬浮时的颜色 */
+    font-weight: bold; /* 悬浮时加粗 */
+    text-decoration: underline; /* 悬浮时下划线 */
+}
+
+/* 初始隐藏状态 */
+.hidden {
+    display: none; /* 隐藏列表项 */
+}
+
+
+
+/* 标题的样式 */
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    position: relative; /* 为线条提供定位参考 */
+    text-align: center; /* 标题居中 */
+    margin-top: 100px;
+}
+.title-line {
+    display: block;
+    height: 2px; /* 线条高度 */
+    background: #333; /* 线条颜色 */
+    position: absolute; /* 确保线条定位 */
+    bottom: -5px; /* 与标题之间的距离 */
+    left: 0; /* 从左侧开始 */
+    right: 0; /* 与右侧对齐 */
+    width: auto; /* 宽度自动调整 */
+    transform: translateY(100%); /* 确保线条在标题下方 */
+}
