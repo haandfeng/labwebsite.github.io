@@ -1,4 +1,4 @@
-/* General Styling */
+/* Global style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,5 +9,21 @@ a {
     text-decoration: none; /* 移除所有链接的下划线 */
     color: inherit; /* 使用父元素的颜色 */
 }
+/* Header style */
+.header {
+    background: #0043B3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* 确保居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    padding-left: 60px; /* 增加左侧内边距 */
+}
 
-/* Header styling */
+/* 新增的中间部分样式 */
+.header-middle {
+    display: flex; /* 确保子元素并排 */
+    align-items: center; /* 居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    gap: 15px; /* 控制元素之间的间距 */
+}
