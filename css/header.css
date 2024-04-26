@@ -74,7 +74,8 @@ header h1 {
     display: inline-block;
     position: relative; /* 为线条提供定位参考 */
     text-align: center; /* 标题居中 */
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom:  50px;
 }
 .title-line {
     display: block;

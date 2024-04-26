@@ -1,0 +1,91 @@
+
+a {
+    text-decoration: none; /* 移除所有链接的下划线 */
+    color: inherit; /* 使用父元素的颜色 */
+}
+/* Header style */
+.header {
+    background: #0043B3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* 确保居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    padding-left: 60px; /* 增加左侧内边距 */
+}
+
+/* 新增的中间部分样式 */
+.header-middle {
+    display: flex; /* 确保子元素并排 */
+    align-items: center; /* 居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    gap: 15px; /* 控制元素之间的间距 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+}
+.content-with-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.left-bar {
+    background-color: #0043B3; /* Blue color for the bar */
+    width: 10px; /* Width of the blue bar */
+    height: auto;
+    display: inline-block; /* Inline block to ensure alignment */
+    margin-right: 100px; /* Additional space between the bar and the content */
+}
+
+.business-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes content to opposite ends */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    width: 100%; /* Ensures the business card spans the whole width */
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    flex: 1;
+    padding-left: 20px; /* Spacing between picture and contact info */
+}
+
+.contact-details {
+    text-align: right; /* Ensures the contact details align to the right */
+    font-size: 0.9em;
+    color: #888;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1em;
+    color: #555;
+}
