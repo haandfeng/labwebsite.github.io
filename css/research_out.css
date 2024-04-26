@@ -27,4 +27,47 @@ a {
     display: flex; /* 启用弹性布局 */
     justify-content: flex-start; 
 }
-/* Header styling */
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333333; 
+    width: 80%;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer; 
+    font-weight: normal;
+    color: grey; 
+    font-size: 20px;
+}
+
+.tab.active {
+    font-weight: bold; 
+    color: black; 
+    font-size: 20px;
+}
+
+.project-info {
+    margin-bottom: 20px; /* 为项目信息和其他部分之间添加间距 */
+  }
+  
+  .project-info h1 {
+    font-size: 24px; /* 设置标题的字体大小 */
+  }
+  
+  .project-info p {
+    color: #999999; /* 设置文字颜色 */
+    font-size: 16px;
+  }
+  .underline {
+    border-bottom: 1px solid #999999; /* 在下方添加一条下划线 */
+    padding-bottom: 25px; /* 添加一些填充以确保下划线不靠近文本 */
+    width: 90%;
+  }
+
+  .project-info a:hover {
+    color: #0043B3; /* 悬浮时的颜色 */
+    font-weight: bold; /* 悬浮时加粗 */
+    text-decoration: underline; /* 悬浮时下划线 */
+}
