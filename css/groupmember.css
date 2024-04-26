@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    text-align: left;
+}
+
+ .right-sidebar {
+    width: 400px;
+    background-color: white;
+    /* padding: 10px; */
+}
+.left-sidebar{
+    width: 100px;
+}
+
+/* 蓝条样式 */
+.header-wrapper {
+    display: inline-block; /* 内联块级显示 */
+    margin-bottom: 50px;
+}
+
+.blue-bar {
+    background-color: #0043B3;
+    height: 12px;
+    width: 100%; /* 蓝条占用整个容器宽度 */
+    display: inline-block;
+}
+
+.content-with-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: flex-start; /* 控制元素从左向右排列 */
+    margin-bottom: 50px;
+
+}
+.left-bar {
+    background-color: #0043B3;
+    width: 10px; /* 蓝条的宽度 */
+    height: auto; /* 确保蓝条与段落高度一致 */
+    display: inline-block; /* 作为内联块级元素 */
+    /* margin-left: 10px;  */
+    margin-right: 50px;
+}
