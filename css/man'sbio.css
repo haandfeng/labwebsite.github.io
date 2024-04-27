@@ -45,7 +45,9 @@ body {
     width: 100%;
     flex-direction: row;
 }
-.content{flex-grow: 1;}
+.content{
+    flex-grow: 1;
+}
 .left-bar {
     background-color: #0043B3; /* Blue color for the bar */
     width: 10px; /* Width of the blue bar */

@@ -24,6 +24,7 @@ a {
     margin-top: 2%;
 
 }
+
 .left-bar {
     background-color: #0043B3;
     width: 2.8%; /* 蓝条的宽度 */
@@ -36,34 +37,8 @@ a {
     flex-grow: 1;
 }
 
- .content-header {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.content-date {
-    color: gray;
-    font-size: 14px;
-}
-
-.content-description {
-    margin-top: 10px;
-}
-.content-image {
-    width: 20%; /* 根据需要调整图片大小 */
-    margin-right: 20px; /* 与文字部分的间距 */
-}
-
-.image {
-    width: 100%; /* 确保图片自适应 */
-    height: auto; /* 保持纵横比 */
-}
-
-
-
-
 .right {
-    width: 10%;
+    width: 20%;
     display: flex; /* 启用弹性布局 */
 
 }
@@ -89,4 +64,20 @@ a {
     font-weight: bold; 
     color: black; 
     font-size: 25px;
+}
+.content p{
+    font-size: 20px;
+}
+
+.contact-button {
+    text-align: right; /* 将按钮对齐到右侧 */
+}
+
+.button {
+    background-color: #0043B3;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+
 }
