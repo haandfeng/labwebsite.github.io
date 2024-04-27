@@ -66,6 +66,55 @@ a {
 .mid p{
     font-size: 18px ;
 }
+.underline {
+    border-bottom: 1px solid #CCCCCC; /* 在下方添加一条下划线 */
+    padding-bottom: 25px; /* 添加一些填充以确保下划线不靠近文本 */
+    width: 50%;
+}
+.biblio-data {
+    display: flex;
+    justify-content: space-between; /* Ensures left alignment for all children */
+        flex-wrap: wrap;
+        &::after {
+          content: '';
+          flex: auto;
+        }
+}
+
+.biblio-data p {
+    margin-bottom: 10px;
+    color: #666666;
+}
+.left1{
+    width: 35%;
+    margin-right: 10%;
+}
+
+.title {
+    color: #333333; /* Darker color for titles */
+}
+
+.app-number {
+    color: #333333; /* Darker color for application numbers */
+}
+
+.app-number {
+    color: #333333;
+}
+.mid h6{
+    margin-bottom: 10px;
+}
+.Abstract{
+    color: #666666;
+    font-size: 16px !important;
+    font-weight: 100 !important;
+}
+.full-width-image {
+    width: 100%; /* 图片占据整个容器宽度 */
+    height: auto; /* 确保图片按比例缩放 */
+    margin-top: 15px; /* 给图片一些顶部间距 */
+}
+
 .right {
     flex-basis: 20%;
     flex-grow: 1;

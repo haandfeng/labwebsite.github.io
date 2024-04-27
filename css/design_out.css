@@ -11,3 +11,76 @@ a {
 }
 
 /* Header styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+a {
+    text-decoration: none; /* 移除所有链接的下划线 */
+    color: inherit; /* 使用父元素的颜色 */
+}
+.mid{
+    flex-grow: 1;
+}
+.right {
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-end; /* 右对齐 */
+    align-items: center; /* 确保垂直居中 */
+    text-align: right;
+    font-size: 15px;
+}
+.container{
+    display: flex;
+}
+.left{
+    width: 10%;
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-start; 
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333333; 
+    width: 80%;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer; 
+    font-weight: normal;
+    color: grey; 
+    font-size: 20px;
+}
+
+.tab.active {
+    font-weight: bold; 
+    color: black; 
+    font-size: 20px;
+}
+
+.project-info {
+    margin-bottom: 20px; /* 为项目信息和其他部分之间添加间距 */
+  }
+  
+  .project-info h1 {
+    font-size: 24px; /* 设置标题的字体大小 */
+  }
+  
+  .project-info p {
+    color: #999999; /* 设置文字颜色 */
+    font-size: 16px;
+  }
+  .underline {
+    border-bottom: 1px solid #999999; /* 在下方添加一条下划线 */
+    padding-bottom: 25px; /* 添加一些填充以确保下划线不靠近文本 */
+    width: 90%;
+  }
+
+  .project-info a:hover {
+    color: #0043B3; /* 悬浮时的颜色 */
+    font-weight: bold; /* 悬浮时加粗 */
+    text-decoration: underline; /* 悬浮时下划线 */
+}

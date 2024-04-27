@@ -66,6 +66,12 @@ a {
 .mid p{
     font-size: 18px ;
 }
+.full-width-image {
+    width: 100%; /* 图片占据整个容器宽度 */
+    height: auto; /* 确保图片按比例缩放 */
+    margin-top: 15px; /* 给图片一些顶部间距 */
+}
+
 .right {
     flex-basis: 20%;
     flex-grow: 1;
