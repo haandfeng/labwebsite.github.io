@@ -1,0 +1,104 @@
+/* Global style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+a {
+    text-decoration: none; /* 移除所有链接的下划线 */
+    color: inherit; /* 使用父元素的颜色 */
+}
+/* Header style */
+.header {
+    background: #0043B3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* 确保居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    padding-left: 60px; /* 增加左侧内边距 */
+}
+
+/* 新增的中间部分样式 */
+.header-middle {
+    display: flex; /* 确保子元素并排 */
+    align-items: center; /* 居中对齐 */
+    font-size: 15px; /* 设置字体大小 */
+    gap: 15px; /* 控制元素之间的间距 */
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    flex-grow: 1;
+    width: 10%;
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-start; 
+    margin-top: 2%;
+}
+.left-bar {
+    background-color: #0043B3;
+    width: 60px; /* 蓝条的宽度 */
+    height: 20px; /* 确保蓝条与段落高度一致 */
+    display: inline-block; /* 作为内联块级元素 */
+    /* margin-left: 10px;  */
+    /* margin-right: 5px; */
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.mid {
+    flex-grow: 1;
+    font-weight:lighter;
+    font-size: 25px;
+    margin-top: 2%;
+    text-align: left;
+    margin-right: 10%;
+    width: 70%;
+}
+.mid p{
+    font-size: 18px ;
+}
+.full-width-image {
+    width: 100%; /* 图片占据整个容器宽度 */
+    height: auto; /* 确保图片按比例缩放 */
+    margin-top: 15px; /* 给图片一些顶部间距 */
+}
+
+.right {
+    flex-basis: 20%;
+    flex-grow: 1;
+    width: 20% !important;
+    margin-top: 2%;
+    display: flex; /* 启用弹性布局 */
+    justify-content: flex-end; /* 右对齐 */
+    align-items: center; /* 确保垂直居中 */
+    text-align: right;
+    font-size: 15px;
+  }
+.blue_block3 {
+    flex-grow: 1;
+    height: 90px;
+    background: #0043B3;
+    width: 80px;
+}
+.text-content {
+    flex-grow: 1;
+    margin-right: 20px; /* 给蓝色块留出空间 */
+    color:#666666;
+}
+.text-content .size1{
+    font-weight: bold;
+}  
+.text-content .size2{
+    border-bottom: 1px solid #CCCCCC; /* 设置下划线 */
+    padding-bottom: 25px; /* 为下划线留出空间 */
+    margin-bottom: 25px;
+}

@@ -82,6 +82,7 @@ a {
     align-items: center; /* 确保垂直居中 */
     text-align: right;
     font-size: 15px;
+    margin-bottom: 45%;
   }
 .blue_block3 {
     flex-grow: 1;
