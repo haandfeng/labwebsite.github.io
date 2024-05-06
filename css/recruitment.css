@@ -61,9 +61,12 @@ a {
 
 .container{
     display: flex;
+
+    justify-content: space-between;
+
 }
 .left{
-    width: 10%;
+    width: 5%;
     display: flex; /* 启用弹性布局 */
     justify-content: flex-start; 
 }
@@ -82,7 +85,8 @@ a {
     margin-right: 20px;
 }
 .mid{
-    flex-grow: 1;
+    width: 60%;
+    text-align: left;
 }
 .right {
     display: flex; /* 启用弹性布局 */

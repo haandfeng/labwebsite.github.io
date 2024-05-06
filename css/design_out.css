@@ -62,7 +62,8 @@ a {
 }
 
 .project-info {
-    margin-bottom: 20px; /* 为项目信息和其他部分之间添加间距 */
+    margin-top: -10px;  /* 向上移动10px */
+    margin-bottom: 20px;  /* 保持底部间距为20px */
   }
   
   .project-info h1 {
