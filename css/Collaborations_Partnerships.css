@@ -25,7 +25,7 @@ a {
 
 }
 .left-bar {
-    background-color: #0043B3;
+    /* background-color: #0043B3; */
     width: 2.8%; /* 蓝条的宽度 */
     height: auto; /* 确保蓝条与段落高度一致 */
     display: inline-block; /* 作为内联块级元素 */
