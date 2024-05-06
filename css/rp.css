@@ -1,13 +1,21 @@
 /* Global style */
-body {
+html,body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    min-height: 100vh; /* 设置 body 的最小高度为视窗的 100% */
 }
 a {
     text-decoration: none; /* 移除所有链接的下划线 */
     color: inherit; /* 使用父元素的颜色 */
+}
+.main-content {
+    flex: 1; /* 允许这个容器拉伸以填充额外空间 */
 }
 /* Header style */
 .header {

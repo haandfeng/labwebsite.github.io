@@ -6,6 +6,7 @@ footer {
     background-color: #0043B3; /* Deep blue background */
     color: white; /* White text on blue background */
     font-size: 10px;
+    /* margin-top: auto; */
 }
 
 /* Contact content styling within footer */
