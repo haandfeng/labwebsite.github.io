@@ -28,11 +28,15 @@ nav ul li {
 /* 悬浮时显示额外信息 */
 /* 确保额外信息不换行 */
 .additional-info {
-    white-space: nowrap; /* 文本不换行 */
+    /* white-space: nowrap;  */
+    width: 180px; /* 设置宽度 */
+    height: auto; /* 高度自适应内容 */
     text-align: left; /* 文本左对齐 */
-    padding: 10px; /* 控制内边距 */
     border: 1px solid lightgray; /* 适度边框 */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+.additional-info li {
+    margin-top: 10px; /* 在每个<li>元素的顶部增加10px的外距 */
 }
 
 /* 控制额外信息的显示与隐藏 */
@@ -48,7 +52,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -74,7 +78,7 @@ header h1 {
     display: inline-block;
     position: relative; /* 为线条提供定位参考 */
     text-align: center; /* 标题居中 */
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom:  50px;
 }
 .title-line {
